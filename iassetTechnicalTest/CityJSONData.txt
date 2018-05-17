@@ -1,0 +1,128 @@
+﻿[
+  {
+    "id": 707860,
+    "name": "Hurzuf",
+    "country": "UA",
+    "coord": {
+      "lon": 34.283333,
+      "lat": 44.549999
+    }
+  },
+  {
+    "id": 2207349,
+    "name": "Bellara",
+    "country": "AU",
+    "coord": {
+      "lon": 153.149597,
+      "lat": -27.063919
+    }
+  },
+  {
+    "id": 2058430,
+    "name": "Whyalla",
+    "country": "AU",
+    "coord": {
+      "lon": 137.583328,
+      "lat": -33.033329
+    }
+  },
+   {
+    "id": 7839407,
+    "name": "Palmerston",
+    "country": "AU",
+    "coord": {
+      "lon": 130.977966,
+      "lat": -12.4962
+    }
+  },
+   {
+    "id": 4056099,
+    "name": "Coffee County",
+    "country": "US",
+    "coord": {
+      "lon": -86.000221,
+      "lat": 31.41683
+    }
+  },
+  {
+    "id": 4151245,
+    "name": "Clay County",
+    "country": "US",
+    "coord": {
+      "lon": -81.833153,
+      "lat": 29.99968
+    }
+  },
+  {
+    "id": 4155535,
+    "name": "Flagler County",
+    "country": "US",
+    "coord": {
+      "lon": -81.291451,
+      "lat": 29.45859
+    }
+  },
+  {
+    "id": 4158449,
+    "name": "Hernando County",
+    "country": "US",
+    "coord": {
+      "lon": -82.458153,
+      "lat": 28.541941
+    }
+  },
+  {
+    "id": 4174301,
+    "name": "Sumter County",
+    "country": "US",
+    "coord": {
+      "lon": -82.083138,
+      "lat": 28.708599
+    }
+  },
+  {
+    "id": 4196508,
+    "name": "Fulton County",
+    "country": "US",
+    "coord": {
+      "lon": -84.449928,
+      "lat": 33.766769
+    }
+  },
+  {
+    "id": 4191014,
+    "name": "DeKalb County",
+    "country": "US",
+    "coord": {
+      "lon": -84.233253,
+      "lat": 33.750381
+    }
+  },
+   {
+    "id": 1488616,
+    "name": "Uk",
+    "country": "RU",
+    "coord": {
+      "lon": 98.858597,
+      "lat": 55.078999
+    }
+  },
+  {
+    "id": 727762,
+    "name": "Rastnik",
+    "country": "BG",
+    "coord": {
+      "lon": 25.283331,
+      "lat": 41.400002
+    }
+  },
+  {
+    "id": 596826,
+    "name": "Murava",
+    "country": "LT",
+    "coord": {
+      "lon": 23.966669,
+      "lat": 54.916672
+    }
+  }
+]

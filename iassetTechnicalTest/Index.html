@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="../Content/bootstrap.css">
+    <link rel="stylesheet" href="../Content/bootstrap.min.css">
+    <link rel="stylesheet" href="../Content/Site.css">
+
+
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+</head>
+
+
+<body ng-app="myApp" ng-controller="weatherCtrl" class="text-center"
+      ng-style="weatherBackground">
+    <h1>{{channelinfo.heading}}</h1>
+    <h2>{{channelinfo.subheading}}</h2>
+    <h5>
+        {{channelinfo.subheading2.name}} -
+        {{channelinfo.subheading2.powered}}
+    </h5>
+    <p><a class="text-danger">{{customError}}</a></p>
+
+    <div ng-if="weatherDetails">
+        <h3>Weather in {{weatherDetails.placename}}, {{weatherDetails.country}}</h3>
+        <a class="btn-lg btn-primary">
+            <img ng-src="{{weatherDetails.icon}}" />{{weatherDetails.description | uppercase}}
+        </a>
+        <a class="btn-lg btn-primary" ng-init="tempToggle=true" title="Change to C"
+           ng-show="tempToggle" ng-click="tempToggle=!tempToggle">{{weatherDetails.fTemp}}</a>
+        <a class="btn-lg btn-primary" ng-show="!tempToggle" title="Change to F"
+           ng-click="tempToggle=!tempToggle">{{weatherDetails.cTemp}}</a>
+
+        <table align="center" class="table-striped" cellpadding="5" width="250">
+
+            <tr><td>Wind</td><td>{{weatherDetails.wind}}</td></tr>
+            <tr><td>Visibility</td><td>{{weatherDetails.visibility}}</td></tr>
+            <tr><td>Sky</td><td>{{weatherDetails.sky | uppercase}}</td></tr>
+            <tr><td>Humidity</td><td>{{weatherDetails.humidity}}%</td></tr>
+            <tr><td>Pressure</td><td>{{weatherDetails.pressure}} hPa</td></tr>
+        </table>
+
+    </div>
+    <p>
+        <br />
+        <label for="country">Country :</label>
+        <select id="country" ng-model="selectedCountry" ng-options="country for (country, city) in cities" ng-change="GetCities()">
+            <option value=''>Select</option>
+        </select>
+        <label for="city">City :</label>
+        <select id="city" ng-disabled="!selectedCountry" ng-model="selectedCity" ng-options="city for city in selectedCountry">
+            <option value=''>Select</option>
+        </select>
+        <a class="btn btn-white" ng-click="GetWeather(selectedCity)" ng-disabled="!selectedCity">Show Weather</a>
+    </p>
+
+    <script src="Index.js"></script>
+
+
+
+
+</body>
+
+</html>
