@@ -27,7 +27,7 @@
             $scope.GetWeather = function (selectedCity) {
                 vm.customError = "";
                 var strCity = selectedCity;
-                var apiKey = "d25bcf6722ead769f048a5645c4d139e";
+                 var apiKey = "d25bcf6722ead769f048a5645c4d139e";
                 var openWeatherURL = "http://api.openweathermap.org/data/2.5/weather?q="
                     + strCity + "&appid=" + apiKey;
 
